@@ -1,0 +1,310 @@
+
+/*TITRES*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+	font-family: 'Roboto' ,sans-serif;
+	}
+
+/*TITRE*/
+
+header{
+	display:flex;
+	align-items: center;
+	background-color: grey;
+	justify-content: center;	 
+	}
+
+h1{ /*Titre du haut*/
+	text-align: center;
+	width: auto;
+ 	height: auto; /*rectangle gris hauteur*/
+ 	/*left: 150px;*/
+ 	top: 0px;
+ 	font-weight: bold;  /*police*/
+ 	font-size: 170%;
+ 	line-height: 20px;  /*Ecart entre deux lignes*/
+ 	color: #2B404D;
+	}
+
+.rectangle h1{
+	margin-bottom: 5px,
+	}
+
+html, body{ /*Corps ecran entier*/
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	}
+
+body{ 
+	flex-direction: column;
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+	align-content: center;   
+	}
+
+/*RECTANGLES*//*TITRE*/
+
+/*RONDS 
+Ecriture chiffres a l'interieur des ronds*/
+
+#Days, #Months, #Hours, #Minutes, #Minutes2, #Seconds{
+
+	width: 100px;
+ 	height: 100px;
+	border-radius: 50%;
+	text-align: center;
+	display: flex;
+	flex-direction: column; /*Chiffres dans ronds*/
+	justify-content: center;
+	}
+
+#Days{ /*Epaisseur des cercles,Chiffres dans ronds*/
+	border : solid blue 10px;		
+    }
+
+#Months{ 
+	border : solid green 10px;
+    }
+
+#Hours{ 
+	border : solid violet 10px; 
+	}
+
+#Minutes, #Minutes2{ 
+	border : solid red 10px;
+    } 
+#Seconds{
+	 border : solid yellow 10px;
+    }
+
+/*CONTACTS/FOOTER */
+   
+h2{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	}
+
+footer{  
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: grey;
+
+	}
+
+img{
+	/*width: 100px;*/
+	height: 100px;
+
+	}
+
+.contact {
+	text-align: center;
+/*background-color: red;*/ 
+
+}
+@media screen and (min-width: 300px) and (max-width: 480px)/* LARGEUR POUR ECRAN DE PORTABLE
+/*Telephone*/
+{
+	
+	.temps, .temps2{ /*Textes qui se centre en dessous les cercles*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content : center;
+	
+	}
+
+	#heure, #minute1{
+	display: flex;
+	flex-direction: column;	
+	}
+	
+	#minute2{ 
+	display: none;			
+	}
+
+	#seconde{ 
+	flex-direction: column;		
+	}
+
+/*Cercles : jours, mois*/
+	#section1{ 
+			
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: stretch;
+	margin-top: 20px;
+	margin-bottom : 20px;
+	/*background-color: #FFFFFF;*/
+	}
+
+/*Cercles : heures, minute1*/
+
+#section2{ 
+			
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: stretch;
+	margin-top: 50px;
+	margin-bottom : 20px;
+	/*background-color: #800080;*/
+	}
+
+#section3{ /*Cercle Secondes*/
+			
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 20px;
+	margin-bottom : 20px;
+	/*background-color: #00FFFF;*/
+	}
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 1000px)  /*LARGEUR POUR ECRAN DE TABLETTE*/
+ /*Tablette*/
+{
+
+main{ 
+	display:flex;	
+	justify-content: space-around;
+	flex-direction: column;
+	height: 480%;
+	margin: 0;
+	padding: 0;	
+	}
+
+.gauche{ /*Textes qui se centre en dessous les cercles*/
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content : space-between;
+	/*background-color: #FC0;*/
+	width: 200px;
+	}
+	
+.milieu{ /*Textes qui se centre en dessous les cercles*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content : center;
+	/*background-color: #CF0;*/
+
+	}
+
+.droite {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content : space-between;
+	/*background-color: brown;*/
+	width: 200px;
+	}
+
+
+#minute1{ 
+	display: none;		
+	}
+
+#section1{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 20px;
+	margin-bottom : 20px;
+	/*background-color: #FFFFFF*/
+	}
+#section2{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-top: 20px;
+	margin-bottom : 20px;
+	/*background-color: #800080*/
+	}
+#section3{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 20px;
+	margin-bottom : 20px;
+	/*background-color: #00FFFF*/
+	}
+}
+/* LARGEUR POUR ECRAN DE PC*/
+@media screen and (min-width: 1001px)  
+
+ /*PC*/
+{
+
+main{ 
+	display:flex;	
+	justify-content: center;
+	flex-direction: row;
+	height: 480%;
+	margin: 0;
+	padding: 0;	
+	}
+
+
+#jour, #mois, #heure, #minute1, #seconde{
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	justify-content: space-around;	
+	}
+	
+#minute2{ 
+	display: none;			
+	}
+	
+#section1{
+			
+	display:flex;
+	flex-direction: row;
+	align-items: flex-center;
+	justify-content: center;
+	justify-content: space-around;
+	margin-top: 20px;
+	margin-bottom : 20px;
+	/*background-color: #FFFFFF*/
+	}
+#section2, #section3 {
+
+	display:flex;
+	flex-direction: row;
+	align-items: flex-center;
+	justify-content: center;
+	justify-content: space-around;
+	margin-top: 20px;
+	margin-bottom : 20px;
+	/*background-color: #FFFFFF*/
+}
+
+.temps  {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content : center;
+	}	
+
+.bas{
+
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	justify-content : center;
+
+
+}
+}	
